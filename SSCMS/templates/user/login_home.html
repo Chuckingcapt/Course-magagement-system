@@ -1,0 +1,9 @@
+{% extends "user/background.html" %}
+{% block login_container %}
+<div class="login-kind student-login-button">
+    <a href="{% url 'login' 'student' %}">Student Login</a>
+</div>
+<div class="login-kind teacher-login-button">
+    <a href="{% url 'login' 'teacher' %}">Teacher Login</a>
+</div>
+{% endblock %}

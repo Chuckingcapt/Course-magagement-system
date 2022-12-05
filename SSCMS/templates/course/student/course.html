@@ -1,0 +1,38 @@
+{% extends "course/nav.html" %}
+{% block title %}Course info{% endblock %}
+{% block content %}
+    {% load static %}
+    <link href="{% static 'css/details.css' %}" rel="stylesheet">
+    <h3>Course info</h3>
+    <ul class="course-details">
+        <li class="course-detail"><span class="detail-name">Course id</span> {{ object.course.id }}</li>
+        <li class="course-detail"><span class="detail-name">Course name</span> {{ object.course.name }}</li>
+        <li class="course-detail"><span class="detail-name">Credits</span> {{ object.course.credit }}</li>
+        <li class="course-detail"><span class="detail-name">Current enrollment/Max enrollment</span> {{ object.course.get_current_count }}/{{ object.course.max_number }}</li>
+        <li class="course-detail"><span class="detail-name">Year</span> {{ object.course.year }}</li>
+        <li class="course-detail"><span class="detail-name">Semester</span> {{ object.course.get_semester_display }}</li>
+
+        <li class="course-detail"><span class="detail-name">Instructor</span> {{ object.course.teacher.name }}</li>
+        <li class="course-detail"><span class="detail-name">Course schedule</span>
+            <span class="course-schedules">
+            {% for schedule in object.course.get_schedules %}
+                <div class="course-schedule">{{ schedule }}</div>
+            {% endfor %}
+            </span>
+        </li>
+        <li class="course-detail"><span class="detail-name">Score</span>
+            {% if object.scores != None %}{{ object.scores }}{% else %} - {% endif %}
+        </li>
+        <li class="course-detail"><span class="detail-name">Instructor's comment</span>
+            {% if object.comments != None %}{{ object.comments }}{% else %} - {% endif %}
+        </li>
+        <li class="course-detail"><span class="detail-name">Student's rating</span>
+            {% if object.rating != None %}{{ object.rating }}{% else %} - {% endif %}
+        </li>
+        <li class="course-detail"><span class="detail-name">Student's comment</span>
+            {% if object.assessment != None %}{{ object.assessment }}{% else %} - {% endif %}
+        </li>
+
+    </ul>
+    <input type="button" value="Return" onclick='location.href="{% url 'view_course' 'is_end'%}"' />
+{% endblock %}

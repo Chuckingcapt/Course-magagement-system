@@ -1,0 +1,121 @@
+body {
+    margin:0
+}
+
+.main-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.main-header{
+    height: 40%;
+    text-align: center;
+    font-size: 40px;
+}
+
+.main-header .main-title {
+    font-size: 50px;
+    margin-top: 5%;
+}
+
+.main-header .welcome-message{
+    font-size: 26px;
+    margin-top: 60px;
+}
+
+.login-container {
+    height: 40%;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.login-container .login-kind {
+    padding-top: 10%;
+    font_size: 30px;
+}
+
+.login-container .login-kind a {
+    text-decoration: none;
+    background: #89e772;
+    color: #eeeeee;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* for login detail page*/
+
+.login-kind-title{
+    height: auto;
+    padding: 2%;
+    justify-content: center;
+    text-align: center;
+    width: 96%;
+    font-size: 22px;
+    display: block;
+    overflow: hidden;
+}
+
+.login-container .form p,
+.login-container .form submit-button {
+    width: 90%;
+    padding-top: 4%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.login-container .form p label {
+    padding-right: 10px;
+    width: 80px;
+}
+
+.login-container .form p input {
+    clear: both;
+    padding: 8px;
+    width: 60%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-container .form .submit-button,
+.login-container .return-button {
+    margin: 5px auto 0;
+    padding-top: 20px;
+}
+
+.submit-button input,
+.submit-button a {
+    border: none;
+    text-decoration: none;
+    font-size: 18px;
+    background: #89e772;
+    color: #eeeeee;
+    padding: 5px 0;
+    text-align: center;
+    display: block;
+    width: 30%;
+    margin: 5px auto 10px auto;
+    border-radius: 10px;
+}
+
+.return-button a {
+    border: none;
+    text-decoration: none;
+    font-size: 18px;
+    background: #cccccc;
+    color: #030303;
+    padding: 5px 0;
+    text-align: center;
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 10px;
+}

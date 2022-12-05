@@ -1,0 +1,55 @@
+.main-content {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: rgb(213 207 207 / 90%);
+    height: 90%;
+    padding: 20px 20px;
+    top: 0;
+}
+
+.main-container {
+    width: 850px;
+    margin: 0 auto;
+}
+
+.main-content h3{
+    width: 850px;
+}
+
+.main-content .right-button{
+    float: right;
+    margin: 0 5px;
+}
+
+.main-bar {
+    width: 850px;
+    height: 30px;
+}
+
+.main-bar .search-form {
+    display: inline-block;
+}
+
+.main-bar .button {
+    height: 30px;
+    vertical-align:top;
+    border:none;
+    color:#eee;
+    background:rgb(12, 12, 164);
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.main-bar .input{
+    width: 150px;
+    height: 24px;
+    margin: auto 10px;
+    vertical-align:top
+}
+
+.main-bar .right-button {
+    float: right;
+    margin: 0 5px;
+}
+
+

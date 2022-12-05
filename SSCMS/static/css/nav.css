@@ -1,0 +1,83 @@
+body,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-image:url('https://snworksceo.imgix.net/dpn/90013b33-10e6-4852-88d1-b4beba820560.sized-1000x1000.jpg?w=1000');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.nav {
+    background-color: rgba(211, 240, 49, 0.9);
+    width: 100%;
+}
+
+.nav a {
+    color: black;
+    text-decoration: unset;
+}
+
+.nav .nav-title,
+.nav .name-logo,
+.nav .log-out {
+    display: inline-block;
+    margin: 5px;
+}
+
+.nav p {
+    display: inline-block;
+    float: left;
+    padding-left: 10px;
+}
+
+.nav .nav-title {
+    font-size: 20px;
+    line-height: 26px;
+    height: 26px;
+    vertical-align: top;
+}
+
+.nav .nav-title a {
+    text-decoration: unset;
+}
+
+
+.nav p.main-title {
+    margin-right: 10px;
+}
+
+.nav p.sub-title {
+    border-left: 3px solid blue;
+}
+
+.nav .log-out {
+    float: right;
+    margin: 8px 5px 0;
+    vertical-align: top;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.nav .name-logo,
+.nav .user-name,
+.nav .name-logo a,
+.nav .user-name a {
+    margin: 7px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.nav .log-out a {
+    margin: 5px;
+    color: blue;
+    text-decoration: none;
+    padding: 0 5px;
+}

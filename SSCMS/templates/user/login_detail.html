@@ -1,0 +1,29 @@
+{% extends "user/background.html" %}
+{% block welcome_message %}
+    {% if from_url == "register" %}
+        <div class="welcome-message">You have successfully registered! Your
+            {% if kind == "student" %}student id{% else %}account number{% endif %} is {{ uid }}.</div>
+    {% else %}
+        <div class="welcome-message">Welcome!</div>
+    {% endif %}
+{% endblock %}
+{% block login_container %}
+    {% if kind == "student" %}
+        <div class="login-kind-title">I'm a student</div>
+    {% else %}
+        <div class="login-kind-title">I'm a teacher</div>
+    {% endif %}
+    <div class="form">
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div class="submit-button">
+                <input type="submit" value="Login">
+                <a href="{% url 'register' kind %}">Sign up</a>
+            </div>
+        </form>
+        <div class="return-button">
+            <a href="{% url 'login' %}">Return</a>
+        </div>
+    </div>
+{% endblock %}
